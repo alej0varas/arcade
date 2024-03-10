@@ -82,6 +82,7 @@ class ModuleInfo:
             self._tree = ast.parse(self._source)
 
         # Collected data
+        # TODO: We need a "Member" class to store the info like a reference to the origin
         self.classes = []
         self.functions = []
         self.variables = []
